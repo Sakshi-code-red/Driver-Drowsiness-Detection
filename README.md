@@ -18,14 +18,10 @@ Driver drowsiness is one of the major causes of road accidents. This project imp
 ## 📂 Project Structure
 
 Driver-Drowsiness-Detection/
-│
-├── src/                     # Source code
-│   ├── model_training.py    # Script for training the ML model
-│   └── model_work.py        # Script for running webcam & prediction
-├── venv/                    # Virtual environment (ignored in GitHub)
-├── ddd.pkl                  # Saved trained model
-├── requirements.txt         # Python dependencies
-└── README.md                # Project documentation
+├── model_train.py    # Script for training the ML model
+├── trained.py        # Script for running webcam & prediction  
+├── ddd.pkl           # Saved trained model
+└── README.md         # Project documentation
 
 ---
 
@@ -34,30 +30,23 @@ Driver-Drowsiness-Detection/
 1. Clone the repository:
 
    (bash)
-   git clone https://github.com/USERNAME/Driver-Drowsiness-Detection.git
+   git clone https://github.com/Sakshi-code-red/Driver-Drowsiness-Detection.git
    cd Driver-Drowsiness-Detection
 
-2. Create and activate a virtual environment:
-
-   (bash)
-   python -m venv venv
-   venv\Scripts\activate   # For Windows
-   source venv/bin/activate   # For Linux/Mac
-
-3. Install dependencies:
+2. Install dependencies:
 
    (bash)
    pip install -r requirements.txt
 
-4. Train the model (optional if model is already saved):
+3. Train the model (optional if model is already saved):
 
    (bash)
-   python src/model_training.py
+   python model_train.py
 
-5. Run the webcam detection:
+4. Run the webcam detection:
 
    (bash)
-   python src/model_work.py
+   python trainde.py
 
 ---
 
