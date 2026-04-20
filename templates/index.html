@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drowsiness Detection</title>
+
+    <style>
+        body {
+            background: #111;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 12px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            background: #28a745;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button.stop {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🚗 Driver Drowsiness Detection</h1>
+    <p>Monitor driver alertness using webcam</p>
+
+    <h2>System Behavior</h2>
+
+    <ul style="list-style:none;">
+        <li>👁️ Eyes Open → Safe</li>
+        <li>😴 Eyes Closed → Warning</li>
+        <li>🚨 Continuous Closed Eyes → Alert Trigger</li>
+    </ul>
+
+    <br>
+
+    <button onclick="startCamera()">🚀 Start Detection</button>
+    <button class="stop" onclick="stopCamera()">🛑 Stop Detection</button>
+
+</div>
+
+<script>
+function startCamera() {
+    fetch('/start-camera')
+        .then(res => res.text())
+        .then(data => alert(data))
+        .catch(err => alert("Error"));
+}
+
+function stopCamera() {
+    fetch('/stop-camera')
+        .then(res => res.text())
+        .then(data => alert(data))
+        .catch(err => alert("Error"));
+}
+</script>
+
+</body>
+</html>

@@ -21,7 +21,7 @@ Driver-Drowsiness-Detection/
 ├── model_train.py    # Script for training the ML model  
 ├── trained.py        # Script for running webcam & prediction    
 ├── ddd.pkl           # Saved trained model  
-└── README.md         # Project documentation  
+└── README.md         # Project documentation  r
 
 ---
 
