@@ -18,10 +18,15 @@ Driver drowsiness is one of the major causes of road accidents. This project imp
 ## 📂 Project Structure
 
 Driver-Drowsiness-Detection/  
+├── DDD_project_dataset
+├── templates/        # folder containing UI
+    ├── index.html
+├── app.py            # main python file to run the application
+├── requirements.txt  # list of all required packages
 ├── model_train.py    # Script for training the ML model  
 ├── trained.py        # Script for running webcam & prediction    
 ├── ddd.pkl           # Saved trained model  
-└── README.md         # Project documentation  r
+└── README.md         # Project documentation 
 
 ---
 
